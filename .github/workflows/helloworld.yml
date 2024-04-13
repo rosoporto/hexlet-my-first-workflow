@@ -11,4 +11,4 @@ jobs:
             uses: actions/checkout@v2
             
           - name: Run make Command
-            run: make say-hell0
+            run: make say-hello
