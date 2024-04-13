@@ -1,0 +1,16 @@
+name: Run Makefile Command
+
+on:
+    push:
+    pull_requests:
+    
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+        
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v2
+            
+          - name: Run make Command
+            run: make say-hell0
